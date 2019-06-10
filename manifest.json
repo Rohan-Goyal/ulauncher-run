@@ -1,9 +1,9 @@
 {
   "manifest_version": "1",
   "api_version": "1",
-  "name": "Run extension",
+  "name": "Terminal runner",
   "description": "Runs a shell command",
-  "developer_name": "James Dumas",
+  "developer_name": "James Dumas almost entirely",
   "icon": "images/icon.png",
   "options": {
     "query_debounce": 1
