@@ -1,9 +1,9 @@
 {
   "manifest_version": "1",
   "api_version": "1",
-  "name": "Terminal runner",
-  "description": "Runs a shell command",
-  "developer_name": "James Dumas almost entirely",
+  "name": "Emacsclient",
+  "description": "Opens an emacsclient process in a GUI window",
+  "developer_name": "Rohan Goyal",
   "icon": "images/icon.png",
   "options": {
     "query_debounce": 1
@@ -12,9 +12,9 @@
     {
       "id": "run_kw",
       "type": "keyword",
-      "name": "Run",
-      "description": "Runs a shell command",
-      "default_value": "run"
+      "name": "Emacs",
+      "description": "Open emacsclient",
+      "default_value": "emacs"
     }
   ]
 }
