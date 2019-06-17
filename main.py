@@ -22,7 +22,7 @@ class KeywordQueryEventListener(EventListener):
         items = [
                 ExtensionResultItem(
                     icon="icon.png",
-                    name="Run a shell command",
+                    name="Emacs",
                     description="Open emacs client" if not data else 'Edit %s in emacs' % data,
                     on_enter=ExtensionCustomAction(data),
                     ),
@@ -34,7 +34,7 @@ class ItemEnterEventListener(EventListener):
 
     def on_event(self, event, extension):
         data = event.get_data() or ""
-        command= 'emacsclient -c '+ '"'+data+'"'
+        command= 'emacsclient -n -c '+ data if data else 'emacsclient -n -c'
         subprocess.Popen(command, shell=True)
 
         return RenderResultListAction([])
