@@ -34,7 +34,7 @@ class ItemEnterEventListener(EventListener):
 
     def on_event(self, event, extension):
         data = event.get_data() or ""
-        command= 'emacsclient -n -c '+ data if data else 'emacsclient -n -c'
+        command= 'emacsclient -n -c '+data
         subprocess.Popen(command, shell=True)
 
         return RenderResultListAction([])
