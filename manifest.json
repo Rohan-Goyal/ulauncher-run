@@ -4,7 +4,7 @@
   "name": "Emacsclient",
   "description": "Opens an emacsclient process in a GUI window",
   "developer_name": "Rohan Goyal",
-  "icon": "images/icon.png",
+  "icon": "icon.png",
   "options": {
     "query_debounce": 1
   },
