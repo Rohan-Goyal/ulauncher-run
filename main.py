@@ -21,7 +21,7 @@ class KeywordQueryEventListener(EventListener):
         data = event.get_argument()
         items = [
                 ExtensionResultItem(
-                    icon="images/icon.png",
+                    icon="icon.png",
                     name="Run a shell command",
                     description="Open emacs client" if not data else 'Edit %s in emacs' % data,
                     on_enter=ExtensionCustomAction(data),
